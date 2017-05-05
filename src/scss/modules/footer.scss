@@ -1,0 +1,52 @@
+@import '../variable';
+
+footer {
+    background-color: #ffffff;
+    display: block;
+    padding: 30px;
+
+    .top, .bottom {
+        width: 70%; 
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        align-items: center;
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            color: $color;
+
+            &.phone:before, &.email:before {
+                font-family: "icon" !important;
+                font-style: normal !important;
+                font-weight: normal !important;
+                font-variant: normal !important;
+                text-transform: none !important;
+                speak: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &.email {
+                line-height: 0.8;
+                border-bottom: 1px solid #000;
+            }
+
+            a {
+                color: $color;
+                display: inline-block;
+            }
+        }
+    }
+
+    .bottom {
+        a {
+            line-height: 0.8;
+            border-bottom: 1px solid #000;
+        }
+    }
+}

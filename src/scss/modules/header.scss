@@ -1,0 +1,75 @@
+@import '../variable';
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EEEEEE;
+
+    .column {
+        position: relative;
+    }
+
+    .wrapper {
+        margin: 0 auto !important;
+    
+        .column {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    .logo {
+
+        img, h1 {
+            display: inline-block;
+        }
+
+        img
+         {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        
+    }
+
+    .quote-brand {
+        font-size: 24px;
+        line-height: 1;     
+        color: #A3A3A3;
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ul {
+            column-count: 4;
+            li {
+                a {
+                    font-size: 20px;
+                    color: #A3A3A3;
+                }
+
+                &.bold {
+                    a {
+                        color: #767676;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+}

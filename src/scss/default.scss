@@ -1,0 +1,90 @@
+@import 'variable';
+
+body {
+    background-color: $background;
+    min-height: 100vh;
+    font-family: 'db_heaventmed';
+}
+
+h1, h4, h5, p {
+    line-height: 0.7;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+        color: $color;
+    }
+}
+
+img {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-30-top-bottom {
+    padding: 20px 0;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.border-yellow {
+    border: 2px solid #D77A48;
+}
+
+.width-80 {
+    width: 80%;
+}
+.width-60 {
+    width: 60%;
+}
+
+.float-right {
+    float: right;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-grey {
+    background-color: $color;
+}
